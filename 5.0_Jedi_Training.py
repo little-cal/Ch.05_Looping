@@ -3,12 +3,12 @@ import random
 '''
  1. Make the following program work. LIST THE 3 MISTAKES (5pts)
    '''  
-# print("This program takes three integers and returns the sum.")
-# total = 0
-# for i in range(3):
-#     x = int(input("Enter a number: "))
-#     total += x
-# print("The total is:", total)
+print("This program takes three integers and returns the sum.")
+total = 0
+for i in range(3):
+    x = int(input("Enter a number: "))
+    total += x
+print("The total is:", total)
 
 # add int to the input
 # += x not += i
@@ -19,8 +19,8 @@ import random
   2. Write a Python program that will use a FOR loop to print the even
      numbers from 2 to 100, inclusive. (5pts)
 '''
-# for i in range(2, 101, 2):
-#     print(i)
+for i in range(2, 101, 2):
+    print(i)
 
 
 
@@ -30,14 +30,14 @@ import random
      10 down to, and including, 0. Then print the words Blast off! Remember, use
      a WHILE loop, don't use a FOR loop. (5pts)
 '''
-# i = 10
-# while i >= 0:
-#     print(i)
-#     i -= 1
-#     if i == 0:
-#         print(i)
-#         print("Blast off!")
-#         break
+i = 10
+while i >= 0:
+    print(i)
+    i -= 1
+    if i == 0:
+        print(i)
+        print("Blast off!")
+        break
 
 
 
@@ -48,8 +48,8 @@ import random
 '''
 
 
-# num = random.randint(1, 11)
-# print(num)
+num = random.randint(1, 10)
+print(num)
 
 
 
@@ -65,27 +65,27 @@ import random
      if statements.
       
 '''
-# i = 0
-# total = 0
-# pos = 0
-# zero = 0
-# neg = 0
-# print("This program will ask you for 7 different numbers, and will read out an analysis")
-# print("You can enter any number you want, including negatives and zero")
-# while i <= 6:
-#     num = int(input("Number: "))
-#     if num > 0:
-#         pos += 1
-#     elif num < 0:
-#         neg += 1
-#     else:
-#         zero += 1
-#     total += num
-#     i += 1
-# print("The sum of all the numbers you gave is:", total)
-# print("You gave", pos, "positive number(s).")
-# print("You gave", neg, "negative number(s).")
-# print("You gave", zero, "zero(s).")
+i = 0
+total = 0
+pos = 0
+zero = 0
+neg = 0
+print("This program will ask you for 7 different numbers, and will read out an analysis")
+print("You can enter any number you want, including negatives and zero")
+while i <= 6:
+    num = int(input("Number: "))
+    if num > 0:
+        pos += 1
+    elif num < 0:
+        neg += 1
+    else:
+        zero += 1
+    total += num
+    i += 1
+print("The sum of all the numbers you gave is:", total)
+print("You gave", pos, "positive number(s).")
+print("You gave", neg, "negative number(s).")
+print("You gave", zero, "zero(s).")
 
 
 
@@ -100,20 +100,20 @@ import random
 3.) Add a loop so that the program does this 50 times.
 4.) Create a running total for the number of heads and the number of tails and print the total at the end.
 '''
-# i = 0
-# h = 0
-# t = 0
-# while i <= 49:
-#     flip = random.randint(0, 1)
-#     if flip == 1:
-#         print("Heads!")
-#         h += 1
-#     else:
-#         print("Tails!")
-#         t += 1
-#     i += 1
-# print("You flipped:", t, "amount of tails.")
-# print("You flipped:", h, "amount of heads.")
+i = 0
+h = 0
+t = 0
+while i <= 49:
+    flip = random.randint(0, 1)
+    if flip == 1:
+        print("Heads!")
+        h += 1
+    else:
+        print("Tails!")
+        t += 1
+    i += 1
+print("You flipped:", t, "amount of tails.")
+print("You flipped:", h, "amount of heads.")
 
 
 '''
