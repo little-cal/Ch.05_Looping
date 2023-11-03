@@ -18,7 +18,7 @@ loss = 0
 
 # instructions for the game
 print("Welcome to the Camel Game.")
-print("The objective of this game is to travel 200 miles across the desert.")
+print("The objective of this game is to travel 250 miles across the desert.")
 print("During your journey, a small group of natives will be chasing you.")
 print("You will have a list of choices that will decide your journey.\n")
 print("Your options will be:")
@@ -71,11 +71,11 @@ while not done:
     is_valid_choice = False
 
     # check for player distance/win requirements
-    if miles_traveled >= 200:
+    if miles_traveled >= 250:
         wins += 1
         print("\nYou made it safely across the desert!")
         print("\033[0;32m", "Congratulations!", "\033[0m")
-        print("The natives were", miles_traveled - native_distance, "miles away from you.")
+        print("The natives were", abs(miles_traveled - native_distance), "miles away from you.")
         print("You have won", wins, "time(s)")
         print("You have lost", loss, "time(s)")
         print("\nPlay again?")
@@ -396,7 +396,7 @@ while not done:
         # prints out the instructions for the game again
         elif choice.lower() == "i":
             print("Welcome to the Camel Game.")
-            print("The objective of this game is to travel 200 miles across the desert.")
+            print("The objective of this game is to travel 250 miles across the desert.")
             print("During your journey, a small group of natives will be chasing you.")
             print("You will have a list of choices that will decide your journey.\n")
             print("Your options will be:")
